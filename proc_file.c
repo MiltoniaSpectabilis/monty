@@ -17,6 +17,12 @@ void proc_file(FILE *file)
 	{
 		len = strlen(line);
 
+		if (len == 0 || (strspn(line, " \t") == len - 1 && line[len - 1] == '\n'))
+		{
+			line_num++;
+			continue;
+		}
+
 		if (len > 0 && line[len - 1] == '\n')
 		{
 			line[len - 1] = '\0';
