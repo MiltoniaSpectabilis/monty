@@ -1,0 +1,1 @@
+The Monty Byte Code Interpreter is a command-line tool that reads and executes Monty byte code instructions from a file. Monty is a scripting language with specific instructions for stack manipulation.
